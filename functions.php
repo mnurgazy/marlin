@@ -56,7 +56,7 @@ function redirect_to ($path) {
 
 
 function is_not_logged_in () {
-	if (!isset($_SESSION['log-in']))
+	if (!$_SESSION['log-in'])
 		return true;
 	else
 		return false;
